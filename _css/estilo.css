@@ -1,0 +1,143 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial,sans-serif;
+    background-color: #dddddd;
+    background: url("../plano-de-fundo.png");
+    background-size: 1900px;
+    color: rgba(0,0,0,1);
+
+}
+
+div#interface{
+    background-color: rgba(230,205,174,0.5);
+    width: 1180px;
+    height: 1345px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px 10px 10px 10px;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+header#cabecalho{
+    height: 230px;
+    background: url("../logo-ecorsini.png") no-repeat 480px 0px;
+}
+
+nav#menu{
+    display: block;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgba(0,0,0,.75);
+    height: 60px;
+    margin: 0px -10px 0px -10px;
+    box-sizing: border-box;
+}
+
+nav#menu ul{
+    list-style: none;
+    margin: 8px -60px 2px 2px;
+    width: 900px;
+    text-transform: uppercase;
+    position: absolute; /*define que pode movimentar o block pelo site inteiro*/
+    top: 220px; /* define a posição do block no site*/
+    right: 400px; /* define a posição do block no site*/
+}
+
+nav#menu li{
+    text-align: center;
+    font-weight: bold;
+    display: inline-block; /*faz com que um bloco seja exibido na mesma linha*/
+    background-color: rgba(0,0,0,.05); /*preenchimento da cor da caixa a ser exibido*/
+    color: white;
+    padding: 10px;  /*tamanho interno da caixa*/
+    margin: 2px; /*espaço externo entre as caixas configuração de margens e centralizar objetos*/
+    width: 150px;
+    -webkit-transition: background-color 1s; /*aplica transição de cor para todos os navegadores*/
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;/*transição de cor das caixa TIME*/
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu a{
+    display: block;
+    color: #ffa500;
+    text-decoration: none;
+
+}
+nav#menu a:hover{
+    color: #ffffff;
+
+}
+
+section#corpo{
+    display: block;
+
+}
+
+figure.foto-legenda{
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 85%;
+    height: 80%;
+    margin: 10px 80px 0px 80px;
+
+
+}
+
+figure.foto-legenda img{
+    width: 1003px;
+    height: 800px;
+}
+
+ figure.foto-legenda figcaption{
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    background: rgba(0,0,0,0.4) ;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+ }
+
+
+ figure.foto-legenda figcaption:hover{
+     opacity: 1;
+ }
+
+article#noticia-principal h2.sobre-pousada{
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+footer#rodape{
+    margin-top: 47px;
+    clear: both;
+}
+
+footer#rodape p{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+

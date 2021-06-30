@@ -1,0 +1,345 @@
+/*Pagina HOME*/
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    text-align: center;
+    font-family: Arial,sans-serif;
+    background-color: #dddddd;
+    background: url("../plano-de-fundo.png");
+    background-size: 2090px;  
+    color: rgba(0,0,0,1);
+}
+
+div#interface{
+    background-color: rgba(230,205,174,.5);
+    width: 1180px;
+    height: 1485px;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px 10px 10px 10px;
+    text-align: justify;
+    
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+header#cabecalho{
+    height: 230px;
+    background: url("../logo-ecorsini.png") no-repeat 480px 0px;
+}
+
+nav#menu{
+    display: block;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: rgba(0,0,0,.75);
+    height: 60px;
+    margin: 0px -10px 0px -10px;
+    box-sizing: border-box;
+}
+
+nav#menu ul{
+    list-style: none;
+    margin: 8px -60px 2px 2px;
+    width: 900px;
+    text-transform: uppercase;
+    position: absolute; /*define que pode movimentar o block pelo site inteiro*/
+    top: 220px; /* define a posição do block no site*/
+    right: 400px; /* define a posição do block no site*/
+}
+
+nav#menu li{
+    text-align: center;
+    font-weight: bold;
+    display: inline-block; /*faz com que um bloco seja exibido na mesma linha*/
+    background-color: rgba(0,0,0,.05); /*preenchimento da cor da caixa a ser exibido*/
+    color: white;
+    padding: 10px;  /*tamanho interno da caixa*/
+    margin: 2px; /*espaço externo entre as caixas configuração de margens e centralizar objetos*/
+    width: 150px;
+    -webkit-transition: background-color 1s; /*aplica transição de cor para todos os navegadores*/
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;/*transição de cor das caixa TIME*/
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu a{
+    display: block;
+    color: #ffa500;
+    text-decoration: none;
+
+}
+nav#menu a:hover{
+    color: #ffffff;
+
+}
+
+section#corpo{
+    padding-bottom: 20px;
+    margin: 10px 10px 15px 10px;
+    display: block;
+
+}
+
+footer#rodape{
+    margin-top: 30px;
+    clear: both;
+}
+
+footer#rodape p{
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*Slides de img*/
+
+.slide{
+    border: 10px solid black;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    width: 1100px;
+    height: 450px;
+    
+
+   /* width: 600px;
+    height: 600px;*/
+    overflow: hidden; /*esconde o que está fora */
+    border-radius: 15px; /*borda redonda*/
+    transition: all 0.4s; 
+    margin: 10px 0px 0px 30px;
+}
+
+.slides{
+    width: 4400px;
+    display: flex; 
+}
+
+.image img{
+    width: 1100px;
+    height: 450px;
+}
+
+#atual{
+    transition: all 2s;
+
+}
+
+.btn{
+    position: absolute;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+    background-color: rgba(0,0,0,.25);
+    border-radius: 100%;
+}
+
+.btn:hover{
+    background-color: #000000;
+    transform: scale(1.5);
+}
+
+#voltar{
+    top: 90%;
+    left: 22%;
+}
+
+#next{
+    top: 90%;
+    right: 23%;
+}
+
+.balls{
+    position: absolute;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+    margin-left: 350px;
+}
+
+.balls div{
+    transition: all 0.5s;
+    border: 3px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.balls div:hover{
+    background: #fff;
+}
+
+.imgAtual{
+    transition: all 0.5s;
+    background: #fff;
+
+}
+
+/*Artigo Principal*/
+
+#artigo-principal{
+    
+    display: block;
+    width: 1180px;
+    height: 245px;
+    margin-top: 30px;
+}
+
+#artigo-principal hgroup{
+    margin: 10px 50px 0px 50px;
+    display: block;
+    text-align: center;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(231, 108, 7, 0.5);
+}
+
+#artigo-principal h1{
+    text-indent: 10px;
+    font-size: 20pt;
+}
+
+#artigo-principal h2{
+    text-indent: 10px;
+    font-size: 15pt;
+    margin-top: 15px;
+}
+
+#artigo-principal p{
+    justify-content: center;
+    display: block;
+    font-size: 13pt;
+    margin: 30px 50px 0px 50px;
+    margin-top: 30px;
+    
+}
+
+/*Informaçoes sobre acomodações , instalações e sobre a pousada*/
+
+#informacoes{
+    display: block;
+    /*border: 1px solid black;*/
+    height: 410px;
+    
+    
+}
+
+.artigos{
+   /* background-color: rgba(0, 0, 0, .25);*/
+    display: flex;
+    /*border: 1px solid black;*/
+    height: 410px;
+
+}
+
+.artigo{
+    
+    text-align: center;
+    margin: 5px;
+    width: 4400px;
+    height: 400px;
+    display: block; 
+    /*border: 1px solid black;*/
+}
+
+.artigo-image{
+    
+    position: relative;
+   /* background-color:  rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 3px rgba(0,0,0,.5);*/
+    height: 250px;
+    margin: 5px ;
+    
+    
+}
+
+.artigo-image img{
+    background-color: #fff;
+    box-shadow: 0px 0px 6px rgba(0,0,0,.75);
+    padding: 5px;
+    height: 240px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.artigo-image img:hover{
+    background-color: rgba(0,0,0,.2);
+    transform: scale(.95);
+}
+
+.artigo h1{
+    display: block;
+    margin: 10px 5px 0px 5px;
+    /*border: 1px solid black;*/
+    background-color: rgba(231, 108, 7, 0.5);
+    border-radius: 25%;
+}
+
+.artigo p{
+    display: block;
+    margin: 10px 5px 0px 5px;
+    
+    
+}
+
+/* Janela Modal para expandir imagem*/
+
+#janela-modal{
+    display: none; /*esconde o display da imagem*/
+    position: fixed;
+    z-index: 1; /*tras a imagem para frente*/
+    padding-top: 50px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    overflow: auto;
+    
+}
+
+#img-modal{
+    
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+}
+
+#btn-fechar{
+    position: absolute;
+    top: 35px;
+    right: 405px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: rgba(236, 22, 22, 0.7);
+}
+
+#btn-fechar:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+    
+}
