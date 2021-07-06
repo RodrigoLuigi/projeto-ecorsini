@@ -10,7 +10,7 @@ body{
     text-align: center;
     font-family: Arial,sans-serif;
     background-color: #dddddd;
-    background: url("../plano-de-fundo.png");
+    background: url("../_images/plano-de-fundo.png");
     background-size: 2140px;  
     color: rgba(0,0,0,1);
 }
@@ -36,7 +36,7 @@ header#cabecalho{
     padding-right: 0px;
     width: 1198x;
     height: 230px;
-    background: url("../logo-ecorsini.png") no-repeat 480px 0px;
+    background: url("../_images/logo-ecorsini.png") no-repeat 480px 0px;
 }
 
 header#cabecalho img{
@@ -151,13 +151,12 @@ nav#menu a:hover{
 }
 
 .social-icon .face img{
-    
     display: inline-block;
     position: absolute;
-    height: 47px;
-    width: 40px;
+   /* height: 47px;*/
+    width: 19%;
     border-radius: 100%;
-    margin: 2px;
+    margin: 6px 2px 2px 2px;
     filter: invert(0%) sepia(100%) hue-rotate(-180deg) saturate(0) brightness(95%) contrast(80%);
 }
 
@@ -166,13 +165,12 @@ nav#menu a:hover{
 }
 
 .social-icon .insta img{
-    
     display: inline-block;
     position: absolute;
-    height: 41px;
-    width: 33px;
+    /*height: 41px;*/
+    width: 15%;
     border-radius: 100%;
-    margin: 5px 2px 2px 50px;
+    margin: 10px 2px 2px 50px;
     filter: invert(0%) sepia(100%) hue-rotate(-180deg) saturate(0) brightness(95%) contrast(80%);
 }
 
@@ -183,10 +181,10 @@ nav#menu a:hover{
 .whatsapp img{
     display: block;
     position: absolute;
-    height: 38px;
-    width: 33px;
+    /*height: 38px;*/
+    width: 3%;
     border-radius: 100%;
-    margin: -48px 2px 2px 1000px;
+    margin: -48px 2px 2px 995px;
     cursor:default;
 }
 
@@ -198,7 +196,6 @@ nav#menu a:hover{
     color: #dddddd;
     margin: -40px 0px 0px 1030px;
     cursor: arrow;
-
 }
 
 

@@ -1,40 +1,104 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8"/>
     <title>Ecoturismo e Aventura</title>
-    <link rel="stylesheet" type="text/css" href="_css/estilo-home.css"/>
+    <link rel="stylesheet" type="text/css" href="_css/estilo-acomodacoes.css"/>
 </head>
 <body>
+    
+
 <div id="interface">
 
-    <header id="cabecalho">   </header>
+   <header id="cabecalho"></header>
 
-   <nav id="menu">
-    <ul type="disc">
-    <li class="home"><a href="home.html" class="hvr-underline-from-center">Home</a></li>
-    <li><a href="" class="hvr-underline-from-center">Acomodações</a></li>
-    <li><a href="" class="hvr-underline-from-center">Instalações</a></li>
-    <li><a href="" class="hvr-underline-from-center">Galeria</a></li>
-    <li><a href="" class="hvr-underline-from-center">Fale conosco</a></li>
-    </ul>
+    <input type="checkbox" id="check">
+        <label id="icone-menu" for="check"><img src="_images/menu-hamburguer.png" alt=""></label>
+<div class="barra">
+
+<nav id="menu-hamburguer">
+    <a href="home.html"><div class="link">Home</div></a>
+    <a href="acomodacoes.html"><div class="link">Acomodações</div></a>
+    <a href="instalacoes.html"><div class="link">Instalações</div></a>
+    <a href="galeria.html"><div class="link">Galeria</div></a>
+    <a href="fale-conosco.html"><div class="link">Fale Conosco</div></a>
 </nav>
 
-<div class="social-icon">
-    <a href="https://www.facebook.com/pousadaecorsini" class="face" target="_black">
-     <img src="faceIcon.png" alt=""></a>
-    <a href="https://www.instagram.com/pousada_ecorsini/" class="insta"><img src="insta.png" alt=""></a>
- </div>
-
-<div class="whatsapp"><img src="whatsapp-icon.png" alt="">
-    <h3 class="numero-whatsapp">(31)9-8359-5501</h3>
 </div>
 
-<section id="corpo"></section>
 
+<nav id="menu">
+    <ul type="disc">
+    <li><a href="home.html" class="hvr-underline-from-center">Home</a></li>
+    <li><a href="acomodacoes.html" class="hvr-underline-from-center">Acomodações</a></li>
+    <li><a href="instalacoes.html" class="hvr-underline-from-center">Instalações</a></li>
+    <li><a href="galeria.html" class="hvr-underline-from-center">Galeria</a></li>
+    <li><a href="fale-conosco.html" class="hvr-underline-from-center">Fale conosco</a></li>
+    </ul>
+    
+    <div class="conjunto-social-icons">
+        <div class="social-icon">
+            <a href="https://www.facebook.com/pousadaecorsini" class="face" target="_black">
+             <img src="_images/faceIcon.png" alt=""></a>
+            <a href="https://www.instagram.com/pousada_ecorsini/" class="insta" target="_blank"><img src="_images/insta.png" alt=""></a>
+         </div>
+        
+        <div class="whatsapp"><img src="_images/whatsapp-icon.png" alt="">
+            <h3 class="numero-whatsapp">(31)9-8359-5501</h3>
+        </div>
+        </div>
+</nav>
+
+
+
+<section id="corpo">
+    <article id="artigo-principal" >
+    <hgroup>
+        <h1>ACOMODAÇÕES DA POUSADA</h1>
+        <h2>Reserve no nosso site e garanta sempre a menor tarifa!</h2>
+        </hgroup>
+    <p>Nossa pousada em Ouro Branco oferece acomodações de muito bom gosto com diversas conveniências para garantir que sua estada conosco seja ainda mais confortável e prazerosa. Possuímos 3 tipos de apartamentos diferenciados: Suíte Standard(2 pessoas), Suíte Standard Superior (3 pessoas) e Suite com hidromassagem. <a href="http://www.institutoestradareal.com.br/" target="_blank"><b>Estrada Real</b></a> .</p>
+    </article>
+    <div class="informacoes">
+        <div class="artigos">
+            
+            <div class="artigo" id="1">
+                <div class="artigo-image">
+                <img src="_images/acomodacoes1.jpg" alt="" onclick='clique("_images/acomodacoes1.jpg")'>
+                </div>
+            <h1>Suíte Standard</h1>
+            <p>Quarto para duas pessoas com split, camas king-size com colchão de molas (boxsprint), dois ramais telefônicos com discagem direta, frigobar, TV 20″ com parabólica, ventiladores de teto, excelente área física, local de trabalho e pequenas refeições.</p>
+                <a href="acomodacoes-suite-standard.html" class="button hvr-bounce-to-righ">Fotos e detalhes</a>
+            </div>
+        
+            <div class="artigo" id="2">
+                <div class="artigo-image">
+                <img src="_images/acomodacoes-standard-superior.jpg" alt="" onclick='clique("_images/acomodacoes-standard-superior.jpg")'>
+                </div>
+            <h1>Suíte Standard Superior</h1>
+            <p>Quarto para três pessoas com split, camas king-size com colchão de molas (boxsprint), dois ramais telefônicos com discagem direta, frigobar, TV 20″ com parabólica, ventiladores de teto, excelente área física, local de trabalho e pequenas refeições.</p>
+                <a href="acomodacoes-suite-superior.html" class="button hvr-bounce-to-righ">Fotos e detalhes</a>
+            </div>
+        
+            <div class="artigo" id="3">
+                <div class="artigo-image">
+                <img src="_images/acomodacoes-hidro.jpg" alt="" onclick='clique("_images/acomodacoes-hidro.jpg")'>
+                </div>
+            <h1>Suíte com hidromassagem</h1>
+            <p>Possui as mesmas características do quarto do duplo e triplo com o diferencial de uma agradável lareira e um ambiente maior. Reserve agora mesmo e venha desfrutar da nossa pousada em meio a Serra Gaúcha com muitas atrações.</p>
+                <a href="acomodacoes-suite-hidro.html" class="button hvr-bounce-to-righ">Fotos e detalhes</a>
+            </div>
+        </div>
+    </div>
+<div id="janela-modal">
+    <span id="btn-fechar">X</span>
+    <img id="img-modal">
+</div>
+</section>
 <footer id="rodape">
-    <p>Copyright &copy; 2021 - by Rodrigo Luigi &nbsp<a href="https://www.facebook.com/rodrigo.luigi.10" target="_blank">Facebook</a> | Twitter</p>
+    <p>Copyright &copy; 2021 - by Rodrigo Luigi &nbsp<a href="https://www.facebook.com/rodrigo.luigi.10" target="_blank">Facebook</a> | Twitter | <a href="https://github.com/RodrigoLuigi" target="_blank">GitHub</a></p>
 </footer>
 </div>
 </body>
+<script src="_js/script-acomodacoes.js"></script>
 </html>

@@ -7,7 +7,7 @@
 body{
     font-family: Arial,sans-serif;
     background-color: #dddddd;
-    background: url("../plano-de-fundo.png");
+    background: url("../_images/plano-de-fundo.png");
     background-size: 1900px;
     color: rgba(0,0,0,1);
 
@@ -27,7 +27,7 @@ p{
 }
 header#cabecalho{
     height: 230px;
-    background: url("../logo-ecorsini.png") no-repeat 480px 0px;
+    background: url("../_images/logo-ecorsini.png") no-repeat 480px 0px;
 }
 
 nav#menu{
